@@ -21,6 +21,7 @@ def short_url():
     url = streamlit.text_input("Enter URL")
     if url and url.startswith("http"):
         streamlit.write(
+            # Use your own API key from bitly.com
             BitlyUrlShortner(url=url, api_key=os.environ.get("API_KEY")).short_url()
         )
     else:
