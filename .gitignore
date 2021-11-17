@@ -1,0 +1,4 @@
+.env
+.extensions
+*.pyc
+.vscode
